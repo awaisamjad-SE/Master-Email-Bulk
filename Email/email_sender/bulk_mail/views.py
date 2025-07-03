@@ -167,6 +167,7 @@ def map_columns(request):
         ax.bar(['Success', 'Failed'], [success, failed], color=['green', 'red'])
         ax.set_title('Email Results')
         buffer = io.BytesIO()
+        # adasa
         fig.savefig(buffer, format='png')
         buffer.seek(0)
         graph = base64.b64encode(buffer.read()).decode('utf-8')
