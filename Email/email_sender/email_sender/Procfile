@@ -1,0 +1,1 @@
+web: gunicorn email_sender.wsgi:application --bind 0.0.0.0:8080
